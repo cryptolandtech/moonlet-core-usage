@@ -12,6 +12,21 @@
 
 ***see src/***
 
+```typescript
+import { Wallet, Blockchains } from 'moonlet-core';
+
+// Use the wallet
+const myWallet = new Wallet();
+console.log( "Generated mnemonics:", myWallet.mnemonics );
+
+// create an ethereum account
+const bc = myWallet.getBlockchain( Blockchains.ETHEREUM );
+bc.createAccount();
+const accs = bc.getAccounts();
+console.log( accs[0].address );
+
+```
+
 ## TestRPC Helpers
 
 Start All test rpcs
