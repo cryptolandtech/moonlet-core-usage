@@ -1,0 +1,29 @@
+{
+  "name": "usage-example",
+  "version": "0.0.1",
+  "description": "Moonlet-Core-Usage-Example",
+  "main": "lib/index.js",
+  "scripts": {
+    "app": "npm run build && node lib/index.js",
+    "build": "tsc -p .",
+    "start-all-rpcs": "rpcs start",
+    "stop-all-rpcs": "rpcs stop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cryptolandtech/moonlet-core-usage.git"
+  },
+  "author": "micky@nowlive.ro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cryptolandtech/moonlet-core-usage/issues"
+  },
+  "homepage": "https://github.com/cryptolandtech/moonlet-core-usage#readme",
+  "dependencies": {
+    "typescript": "^3.1.1",
+    "moonlet-core": "git+https://github.com/cryptolandtech/moonlet-core.git"
+  },
+  "devDependencies": {
+    "@types/node": "^10.11.3"
+  }
+}
