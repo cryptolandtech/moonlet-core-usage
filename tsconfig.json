@@ -15,13 +15,14 @@
             "node"
         ],
         "module": "commonjs",
-        "target": "es6",
+        "target": "es2017",
         "noImplicitReturns": true,
         "noImplicitThis": true,
         "noImplicitAny": false,
-        "strictNullChecks": true,
+        "strictNullChecks": false,
         "suppressImplicitAnyIndexErrors": true,
-        "noUnusedLocals": true
+        "noUnusedLocals": false,
+        "skipLibCheck": true
     },
     "include": [
         "./src/**/**/**/*"
